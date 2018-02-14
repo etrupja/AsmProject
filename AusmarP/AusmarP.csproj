@@ -157,15 +157,23 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SiteController.cs" />
     <Compile Include="Data\AppContext.cs" />
     <Compile Include="Data\Models\Issue.cs" />
+    <Compile Include="Data\Models\Maintenance.cs" />
+    <Compile Include="Data\Models\ProgressStage.cs" />
     <Compile Include="Data\Models\Site.cs" />
+    <Compile Include="Data\Models\Variation.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201802131229001_First Migration.cs" />
     <Compile Include="Migrations\201802131229001_First Migration.Designer.cs">
       <DependentUpon>201802131229001_First Migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802141733346_AddingModels.cs" />
+    <Compile Include="Migrations\201802141733346_AddingModels.Designer.cs">
+      <DependentUpon>201802141733346_AddingModels.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -213,6 +221,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Site\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -225,6 +234,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201802131229001_First Migration.resx">
       <DependentUpon>201802131229001_First Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802141733346_AddingModels.resx">
+      <DependentUpon>201802141733346_AddingModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
