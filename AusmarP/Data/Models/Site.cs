@@ -26,7 +26,7 @@ namespace AusmarP.Data.Models
         public List<Issue> Issues { get; set; }
         public List<Maintenance> Maintenances { get; set; }
         public List<ProgressStage> ProgressStages { get; set; }
-        public List<Variation>Variations { get; set; }
+        public List<Variation> Variations { get; set; }
 
     }
 }
